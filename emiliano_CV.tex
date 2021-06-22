@@ -1,0 +1,252 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.3, 10 May 2020) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+%% AltaCV uses the fontawesome5 and academicon fonts
+%% and packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+% \colorlet{name}{black}
+\colorlet{tagline}{VividPurple}
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+% \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+% \renewcommand{\personalinfofont}{\footnotesize}
+% \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+% \renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Rocío María Royo}
+\tagline{Estudiante Avanzada de Ingeniería Industrial }
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%% You can add multiple photos on the left or right
+\photoR{2.5cm}{rocio1.jpeg}
+% \photoL{2cm}{Yacht_High,Suitcase_High}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{royorocio4@gmail.com}
+  \phone{2615336840}
+  \mailaddress{Vieytes 2000, Luján de Cuyo }
+  \location{Mendoza, Argentina}
+  \homepage{https://www.facebook.com/roroyo}
+  \twitter{https://twitter.com/RoyoRocio}
+  
+%   \github{github.com/mmayer} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+  % \orcid{0000-0000-0000-0000}
+  %% You can add your own arbtrary detail with
+  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+  % \printinfo{\faPaw}{Hey ho!}
+  %% Or you can declare your own field with
+  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+  % \gitlab{your_id}
+}
+
+\makecvheader
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+\cvsection{Experiencia}
+
+\cvevent{Académica}{Clases de apoyo para nivel primario y secundario}{Agosto 2019 / Diciembre 2020}{Mendoza}
+\begin{itemize}
+\item  Apoyo académico para alumnos de nivel primario y secundario con dficultades en las asignaturas Matemática y Física
+
+\end{itemize}
+
+\divider
+\cvevent{Deportiva}{Colaboración en entrenamiento para inferiores en Liceo Rugby Club }{2018 / Actualmente}{Mendoza}
+\begin{itemize}
+\item  Ayuda a entrenadores de Liceo Country Club con jugadoras menores de 15 años, para poder colaborar en aprendizaje y ejemplo
+
+\end{itemize}
+
+
+%\cvevent{Secretaria de Extensión y Vinculación Uncuyo. Área de Vinculación Tecnológica}{UNCuyo}{2018-2019}{Mendoza, Argentina}
+%\begin{itemize}
+%\item Preparación de documentación técnica para solicitud de fondos no reembolsables
+%\item Vinculación con 73 empresas del sur de Mendoza para FONTAR/FONSOFT
+%\end{itemize}
+
+%\divider
+
+%\cvevent{Estancia de Investigación ERPI (Equipe de Recherche Processus Innovatif) y en Fab Living Lab }{2019 -2020}{Nancy, Francia}
+
+%\divider
+
+%\cvevent{Bases epistemicas del Fab Lab de la Industria del Vino}{2018-2020}{Mendoza y Nancy}
+
+%\begin{itemize}
+%\item Nuevos espacios de Innovación para la industria del vino en Mendoza Ref.  Dr. Mauricio Camargo (cel+33781423109)
+%\item Optimized Google's homepage and A/B tested every minor detail to increase usability (incl.~spacing between words, color schemes and pixel-by-pixel element alignment)
+%\end{itemize}
+
+% \divider
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+\cvsection{Mi día de trabajo}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+% Some ad-hoc tweaking to adjust the labels so that they don't overlap
+\hspace*{-1em}  %% quick hack to move the wheelchart a bit left
+\wheelchart{1.5cm}{0.5cm}{%
+  15/13em/accent!30/Descanso para crear mis sueños,
+  27/9em/accent!60/Tiempo dedicado al cusado de materias,
+  6/11em/accent!10/\footnotesize\\[Creatividad Arte y Música],
+  12/11em/accent!40/Familia y amigos,
+  17/8em/accent!20/\footnotesize Tiempo dedicado al deporte,
+  23/9em/accent/Tiempo dedicado al estudio de materias,
+  3/8em/accent/\footnotesize Tiempo de lectura}
+
+\cvsection{Fortalezas}
+
+\cvtag{Responsable}
+\cvtag{Perseverante}
+\cvtag{Autoexigente}
+\cvtag{Dedicada}\\
+\cvtag{Honesta}
+\cvtag{Con iniciativa propia}
+\cvtag{Disciplina}
+
+
+\divider\smallskip
+
+%\cvtag{AR}
+%\cvtag{Incursionando en Analítica}
+%\cvtag{Python Jr. Programmer}
+
+\cvsection{Idiomas}
+
+\cvskill{Inglés}{3}
+% \divider
+
+\cvskill{Español}{5}
+% \divider
+
+\cvskill{Portugues}{2}
+% use ONLY \newpage if you want to force a page break for
+% ONLY the currentc column
+\newpage
+
+
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+
+\cvsection{Filosofía de Vida}
+\begin{quote}
+``El secreto de la felicidad no es hacer siempre lo que se quiere, sino querer siempre lo que se hace ''
+\end{quote}
+
+
+\cvsection{Educación}
+
+\cvevent{Colegio Universitario Santa María }{Bachillerato en Adminstración y Economía }{2005 2016}{Mendoza}
+
+\divider
+
+\cvevent{Universidad Nacional de Cuyo }{Cursando actualmente materias de cuarto y quinto año de Ingeniería Industrial}{2016}{Mendoza}
+
+\cvsection{Intereses y Aspiraciones}
+
+\item{Realizar un Master en negocios}
+\item{Especializarme en las Energías Renovables}
+\item{Crear un emprendimiento propio}
+
+
+
+%\newpage
+
+\cvsection{Referees}
+
+% \cvref{name}{email}{mailing address}
+\cvref{Prof.\ Ricardo Palma}{Instituto}{Ingeniería Industrial}
+{Universidad Nacional de Cuyo}
+
+\divider
+
+\cvref{Prof.\ Gustavo Masera}{Institute}{EPISTEME}
+{CEAL- Centro de Estudios y Apicaciones Logísticas}
+
+
+\cvref{Actualización de este Cv}{CV Disponible en GitHub}{Actualizado Julio 2021}{htpp://}
+
+\end{paracol}
+
+\end{document}
